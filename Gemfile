@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -25,6 +26,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+
+# Bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass', '~> 3.3.6'
+# I like font-awesome. I like the asset pipeline. I like semantic versioning. If you do too, you're welcome.
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.0'
+# Font-Awesome SASS gem for use in Ruby projects
+gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
