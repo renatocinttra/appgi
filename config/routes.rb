@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'gh/index'
+
+  get 'gi/index'
+
+  get 'geo/index'
+
+  get 'ga/index'
+
+  get 'boletim/index'
+
+  get 'bi/index'
+
   get 'home/index'
 
   root 'home#index'

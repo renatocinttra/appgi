@@ -1,2 +1,298 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!-- HEADER -->
+	<header id="header">
+		<nav class="navbar st-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo" href="index.html"><%= image_tag("/assets/logo.png", :alt => "") %></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="st-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+				    	<li><a href="#header">Início</a></li>
+				    	<li><a href="#gerencias">Gerências</a></li>
+				    	<li><a href="#painel">Painel do CG</a></li>
+				    	<li><a href="#noticias">Boletim Informativo</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+<!-- /HEADER -->
+
+<!-- SLIDER -->
+	<section id="slider">
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">			
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(/assets/slider/banner_01.png)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>Ato </h1>
+								<h2>Em Defesa do SUS</h2>
+								<p>Os Serviços de Saúde da Região em parceria com os usuários, conselheiros gestores e profissionais de saúde participaram do ato em defesa do SUS.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(/assets/slider/banner_02.png)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>USCS </h1>
+								<h2>Estágio de Medicina</h2>
+								<p>O início do estágio dos alunos de medicina foi marcado com acolhimento e cuidado por todos da equipe que os receberam nos nossos Serviços de Saúde.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(/assets/slider/banner_03.png)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>Eba! </h1>
+								<h2>Trilha do Mirante</h2>
+								<p>Entre subidas e descidas a ASF Sul, em um sabádo pela manhã, fez a trilha que dá acesso ao mirante na região do Marsilac, que em dias de boa visibilidade é possível avistar as cidades da Baixada Santista.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item" style="background-image: url(/assets/slider/banner_04.png)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>Seminário </h1>
+								<h2>Projeto Cuidar</h2>
+								<p>Seminário sobre Violência ​Doméstica contra a Mulher para ​profissionais de saúde realizado no CEU Vila Rubi.</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+			</div>		
+		</div> <!--/#home-carousel--> 
+    </section>
+<!-- /SLIDER -->
+
+	
+	<!-- GERÊNCIAS -->
+	<section id="gerencias">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Escritório Regional ASF Sul</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-cogs"></i> Gerência Administrativa</h2>
+					<p align=justify>Realiza a coordenação do setor administrativo, financeiro e manutenção. Acompanhamento de investimentos financeiros e elaborando relatórios gerenciais para que as atividades sejam desenvolvidas em conformidade com as normas e procedimentos técnicos.</p>
+					<%= link_to "Em breve",  ga_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-line-chart"></i> Gerência da Informação</h2>
+					<p align=justify>Produz materiais estratégicos no formato de relatórios e instrumentos gerenciais com o objetivo de apoiar a execução e comprimento das metas nos Contratos de Gestão pactuadas com o Município, visando a melhoria das condições de saúde para população da cidade.</p>
+					<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-users"></i> Gerência de RH</h2>
+					<p align=justify>Elabora planos táticos e operacionais na direção dos objetivos da Instituição, coordenando o recrutamento, seleção e avaliação de pessoal. Potencializar os processos organizacionais e gerenciar pessoas, de forma a integrar a Rede.</p>
+					<br>
+					<%= link_to "Em breve",  gh_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+					<br>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-book"></i> Educação Permanente</h2>
+					<p align=justify>Construção de estratégias e processos que qualifiquem a atenção e a gestão em saúde, fortalecendo o controle social com o objetivo de produzir um impacto positivo sobre a saúde individual e coletiva da população.</p>
+					<br>
+					<br>
+					<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+					<br>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-phone"></i> Ouvidoria</h2>
+					<p align=justify>Promover e garantir o atendimento de excelência às manifestações dos cidadãos e o aprimoramento constante na gestão local dos Serviços de Saúde da Região da Capela do Socorro e Parelheiros, promovendo melhoria contínua dos serviços prestados.</p>
+					<br>
+					<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+					<br>
+				</div>
+
+				<div class="col-md-4 col-sm-6 st-service">
+					<h2><i class="fa fa-file-text"></i> Projetos</h2>
+					<p>Coordenação de projetos especiais voltados às temáticas: prevenção das dst/hiv/aids, da gravidez na adolescência, violências, dimunir a mortalidade infantil e cuidados com as gestantes.</p>
+					<br>
+					<br>
+					<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+					<br>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /GERÊNCIAS -->
+	
+	<!-- PAINEL -->
+	<section id="painel">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Painel do Contrato de Gestão</h1>
+						<span class="st-border"></span>
+						<br>
+						<br>
+						<p align=justify>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae</p>
+						<br>
+						<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+						<br>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</section>
+	<!-- /PAINEL -->
+
+	<!-- NOTICIAS -->
+	<section id="noticias">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Boletim Informativo</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+				<div class="col-sm-6">
+						<div class="noticias text-center">
+							<h4>Objetivo</h4>
+							<p>Compartilhar informações e novidades que acontecem nos serviços de saúde gerenciados pela ASF na Região Sul. Este tipo de comunicação possibilita o fortalecimento da relação entre todos os colaboradores e a Instituição.</p>
+							<%= link_to "Em breve",  boletim_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+						</div>
+				</div>	
+				<div class="col-sm-6 our-office">
+					<div id="office-carousel" class="carousel slide" data-ride="carousel">			
+						<div class="carousel-inner">
+							<div class="item active">
+								<%= image_tag("/assets/news/noticia_01.jpg", :alt => "") %>
+							</div>
+							<div class="item">
+								<%= image_tag("/assets/news/noticia_02.jpg", :alt => "") %>			
+							</div>
+							<div class="item">
+								<%= image_tag("/assets/news/noticia_03.jpg", :alt => "") %>		
+							</div>
+							
+							<a class="office-carousel-left" href="#office-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+							<a class="office-carousel-right" href="#office-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						</div>		
+					</div> <!--/#office-carousel-->
+				</div> 
+			</div>
+		</div>
+	</section>
+	<!-- /NOTICIAS -->
+
+	<!-- TESTIMONIAL -->
+	<section id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="overlay"></div>
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="st-testimonials">
+
+						<div class="item active text-center">
+							<p>"Algumas pessoas querem que algo aconteça, outras desejam que aconteça, outras fazem acontecer."</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>Arnaldo Goldbaum</h5>
+								<span>Gerência da Informação</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"Nenhum vento sopra a favor de que não sabe para onde ir." (Sêneca)</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>José Domingos Severo</h5>
+								<span>Gerência Administrativa</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"Melhor encontrar pedras no caminho do que no rim. Reclame menos e sorria mais."</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>Fabiana Silvan</h5>
+								<span>Gerência da Informação</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"A persistência é o caminho do êxito." (Charles Chaplin)</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>Jackson Leite</h5>
+								<span>Gerência da Informação</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"Conhecimento não é aquilo que você sabe, mas o que você faz com aquilo que você sabe." (Aldous Huxley, 1894-1963)</p>
+							<div class="st-border"></div>
+							<div class="client-info">
+								<h5>Renato Cintra</h5>
+								<span>Gerência da Informação</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /TESTIMONIAL -->
+	
+	<!-- FUN FACTS -->
+	<section id="fun-facts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-users"></i> <span class="st-counter">3.000</span></h3>
+						<p>Funcionários</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-medkit"></i> <span class="st-counter">52</span></h3>
+						<p>Estabelecimentos de Saúde</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-file-text-o"></i> <span class="st-counter">2</span></h3>
+						<p>Contratos de Gestão</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h3><i class="fa fa-map-marker"></i> <span class="st-counter">6</span></h3>
+						<p>Regiões Homogêneas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /FUN FACTS -->

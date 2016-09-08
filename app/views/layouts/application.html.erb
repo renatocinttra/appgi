@@ -3,12 +3,40 @@
 <head>
   <title>AppGI</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'bootstrap.min' %>
+  <%= stylesheet_link_tag    'owl.carousel' %>
+  <%= stylesheet_link_tag    'magnific-popup' %>
+  <%= stylesheet_link_tag    'font-awesome' %>
+  <%= stylesheet_link_tag    'style' %>
+  <%= stylesheet_link_tag    'responsive' %>
+  <%= stylesheet_link_tag    'gh' %>
+  <%= stylesheet_link_tag    'ga' %>
+  <%= stylesheet_link_tag    'boletim' %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.min' %>
+  <%= javascript_include_tag 'bootstrap.min' %>
+  <%= javascript_include_tag 'jquery.parallax' %>
+  <%= javascript_include_tag 'smoothscroll' %>
+  <%= javascript_include_tag 'masonry.pkgd.min' %>
+  <%= javascript_include_tag 'jquery.fitvids' %>
+  <%= javascript_include_tag 'owl.carousel.min' %>
+  <%= javascript_include_tag 'jquery.counterup.min' %>
+  <%= javascript_include_tag 'waypoints.min' %>
+  <%= javascript_include_tag 'jquery.isotope.min' %>
+  <%= javascript_include_tag 'jquery.magnific-popup.min' %>
+  <%= javascript_include_tag 'scripts' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<%= render 'shared/preloader' %>
+
 <%= yield %>
+
+<%= render 'shared/scroll' %>
+
+<%= render 'shared/footer' %>
 
 </body>
 </html>
