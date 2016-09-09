@@ -1,3 +1,100 @@
-// Place all the styles related to the ga controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 1. ga */
+
+	.isotope-item-ga {
+	    z-index: 2;
+	}
+	.isotope-hidden-ga .isotope-item-ga {
+	    z-index: 1;
+	}
+	.isotope-ga, .isotope-ga .isotope-item-ga {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-ga {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-ga .isotope-item-ga {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-ga ul.filter-ga{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-ga ul.filter-ga li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-ga ul.filter-ga li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-ga ul.filter-ga li a:hover,
+	.portfolio-wrapper-ga ul.filter-ga li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-ga .portfolio-items-ga{
+		clear: both;
+	}
+
+	.portfolio-wrapper-ga .portfolio-content-ga{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-ga .portfolio-overlay-ga{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-ga .portfolio-content-ga:hover .portfolio-overlay-ga{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-ga .portfolio-overlay-ga a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-ga .portfolio-overlay-ga a:hover{
+		color: #fff;
+	}
