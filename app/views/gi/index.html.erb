@@ -1,2 +1,786 @@
-<h1>Gi#index</h1>
-<p>Find me in app/views/gi/index.html.erb</p>
+<!-- HEADER -->
+	<header id="header">
+		<nav class="navbar st-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo" href="index.html"><%= image_tag asset_path("logo.png", :alt => "") %></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="st-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Início", root_path(:anchor => "header"), :target => "_top" %></li>
+						<li><%= link_to "Gerências", root_path(:anchor => "gerencias"), :target => "_top" %></li>
+						<li><%= link_to "Painel do CG", root_path(:anchor => "painel"), :target => "_top" %></li>
+						<li><%= link_to "Boletim Informativo", root_path(:anchor => "noticias"), :target => "_top" %></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+<!-- /HEADER -->
+
+<!-- PAGE HEADER -->
+	<section id="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Gerência da Informação</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- /PAGE HEADER -->
+
+
+<!-- BLOG -->
+	<section id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					
+					<div class="single-blog">
+						<article>
+							<div class="post-thumb"><%= image_tag asset_path("gi/logo_gi_1.jpg", :class => "img-responsive", :alt => "") %></div>
+							<h4 class="post-title"><a href="">Geo-Indicadores de Saúde</a></h4>
+							<div class="post-meta text-uppercase">
+								<span>Última atualização em 25 de junho de 2016</span>
+							</div>
+							<div class="post-article" align=justify>
+								Espaço destinado ao Geoprocessamento dos dados de Cobertura de Pré-Natal das duas supervisões, Capela do Socorro e Parelheiros.
+							</div>
+							<%= link_to "Em Breve", geo_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+						</article>
+					</div>
+					<hr>
+
+					<div class="single-blog">
+						<article>
+							<div class="post-thumb"><%= image_tag asset_path("gi/logo_gi_3.jpg", :class => "img-responsive", :alt => "") %></div>
+							<h4 class="post-title">Relatórios Estratégicos</h4>
+							<div class="post-meta text-uppercase">
+								<span>Última atualização em 8 de agosto de 2016</span>
+							</div>
+							<div class="post-article" align=justify>
+								Aqui são apresentados os relatórios com as informações essenciais de forma clara e objetiva, importante para análise, acompanhamento, tomada de decisões e estratégias para o alcance de resultados positivos no comprimento dos CG e na melhoria da Saúde das comunidades assistidas. Os relatórios abrangem: Absenteísmo; Perda Primária; Indicador da proporção de gestantes que realizaram 7 ou mais consultas durante a gestação; Indicador da proporção das gestantes que realizaram procedimentos básicos durante o pré-natal; Quantitativo assistencial; Indicador de tendência central; e Carta compromisso.
+							</div>
+						
+
+							<div class="portfolio-wrapper" >
+								<div class="col-md-12">
+									<ul class="filter">  			
+										<li><a class="active" href="#" data-filter="*">Todos</a></li>	
+										<li><a href="#" data-filter=".absenteismo">Absenteísmo</a></li>
+										<li><a href="#" data-filter=".pre-natal">Pré-Natal</a></li>
+										<li><a href="#" data-filter=".perda_primaria">Perda Primária</a></li>
+										<li><a href="#" data-filter=".producao">Produção</a></li>
+										<li><a href="#" data-filter=".medidas">Tendências</a></li>
+										<li><a href="#" data-filter=".scnes">SCNES</a></li>
+									</ul><!--/#portfolio-filter-->
+								</div>
+						
+								<div class="portfolio-items">
+								<!-- Absenteísmo -->
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_BelmiraMarin.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Belmira Marin</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_Dutra.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Dutra</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_PauloGuilguer.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Paulo Guilguer</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_Colonia.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Colônia</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_SeteCurvas.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Sete Curvas</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid absenteismo">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/abs_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/absenteismo/Absenteismo_Regiao_TeotonioVilela.pdf"), :target => "_blank"  %>
+												<h5>Absenteísmo</h5>
+												<p>Região Homogênea Teotônio Vilela</p>
+											</div>
+										</div>	
+									</div>	
+								<!-- /#Absenteísmo -->
+
+								<!-- Pré-Natal -->
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_BelmiraMarin.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Belmira Marin</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_Dutra.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Dutra</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_PauloGuilguer.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Paulo Guilguer</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_Colonia.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Colônia</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_SeteCurvas.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Sete Curvas</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid pre-natal">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pr_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/pre_natal/Cobertura_Pre_Natal_Regiao_TeotonioVilela.pdf"), :target => "_blank"  %>
+												<h5>Pré-Natal</h5>
+												<p>Região Homogênea Teotônio Vilela</p>
+											</div>
+										</div>	
+									</div>	
+								<!-- /#Pre-Natal -->
+
+								<!-- Perda Primária -->
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_BelmiraMarin.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Belmira Marin</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_Dutra.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Dutra</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_PauloGuilguer.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Paulo Guilguer</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_Colonia.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Colônia</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_SeteCurvas.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Sete Curvas</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid perda_primaria">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/pp_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/perda_primaria/Perda_Primaria_Regiao_TeotonioVilela.pdf"), :target => "_blank"  %>
+												<h5>Perda Primária</h5>
+												<p>Região Homogênea Teotônio Vilela</p>
+											</div>
+										</div>	
+									</div>	
+								<!-- /#Perda Primária -->
+
+								<!-- Produção -->
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_BelmiraMarin.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Belmira Marin</p>
+											</div>
+										</div>	
+									</div>
+
+
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_Dutra.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Dutra</p>
+											</div>
+										</div>	
+									</div>
+
+
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_PauloGuilguer.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Paulo Guilguer</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_Colonia.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Colônia</p>
+											</div>
+										</div>	
+									</div>
+
+
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_SeteCurvas.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Sete Curvas</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid producao">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/prod_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/producao/Producao_Regiao_TeotonioVilela.pdf"), :target => "_blank"  %>
+												<h5>Produção</h5>
+												<p>Região Homogênea Teotônio Vilela</p>
+											</div>
+										</div>	
+									</div>		
+								<!-- /#Produção -->
+
+								<!-- Medidas de Tendência -->
+									<div class="col-md-4 col-sm-6 work-grid medidas">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/med_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/medidas_tendencia/Medidas_de_Tendencia_AMAE_AE_CEO_DIAG_Capela_2016.pdf"), :target => "_blank"  %>
+												<h5>Tendência - 2016</h5>
+												<p>AMAE, AE, CEO e Diagnóstico - Capela</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid medidas">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/med_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/medidas_tendencia/Medidas_de_Tendencia_ESF_Capela_2016.pdf"), :target => "_blank"  %>
+												<h5>Tendência - 2016</h5>
+												<p>ESF - Capela</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid medidas">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/med_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/medidas_tendencia/Medidas_de_Tendencia_UBS_Capela_2016.pdf"), :target => "_blank"  %>
+												<h5>Tendência - 2016</h5>
+												<p>UBS - Capela</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid medidas">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/med_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/medidas_tendencia/Medidas_de_Tendencia_CEO_DIAG_Parelheiros_2016.pdf"), :target => "_blank"  %>
+												<h5>Tendência - 2016</h5>
+												<p>CEO e Apoio Diagnóstico - Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid medidas">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/med_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/medidas_tendencia/Medidas_de_Tendencia_ESF_Parelheiros_2016.pdf"), :target => "_blank"  %>
+												<h5>Tendência - 2016</h5>
+												<p>ESF - Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+								<!-- /#Medidas de Tendência -->
+
+								<!-- SCNES -->
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_BelmiraMarin.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Belmira Marin</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_Dutra.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Dutra</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_PauloGuilguer.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Paulo Guilguer</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_Colonia.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Colônia</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_SeteCurvas.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Sete Curvas</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid scnes">
+										<div class="portfolio-content">
+											<%= image_tag asset_path("reports/gi/scnes_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/scnes/SCNES_Regiao_TeotonioVilela.pdf"), :target => "_blank"  %>
+												<h5>SCNES</h5>
+												<p>Região Homogênea Teotônio Vilela</p>
+											</div>
+										</div>	
+									</div>	
+								<!-- /#SCNES -->
+								</div>				
+							</div>	
+						</article>
+					</div>
+					<hr>
+
+					<div class="single-blog">
+						<article>
+							<div class="post-thumb"><%= image_tag asset_path("gi/logo_gi_2.jpg", :class => "img-responsive", :alt => "") %></div>
+							<h4 class="post-title"><a href="">Relatórios do Contrato de Gestão</a></h4>
+							<div class="post-meta text-uppercase">
+								<span>Última atualização em  7 de julho de 2016</span>
+							</div>
+							<div class="post-article" align=justify>
+								Acesse aqui os relatórios de Equipe Mínima e Assistencial, que são os relatórios oficiais apresentadas ao Município de São Paulo, para prestação de contas das atividades mensais e trimestrais desenvolvidas pela Associação Saúde da Família relacionadas aos Contratos de Gestão (CG). É alimentado e gerado pela ferramenta WebSAASS (Sistema de Acompanhamento dos Serviços de Saúde), e por meio deles também possível acompanhar os indicadores assistenciais previstos nos CG com precisão, identificando rapidamente as deficiências na prestação e agilizando as soluções.
+							</div>
+							
+							<div class="portfolio-wrapper-cg" >
+								<div class="col-md-12">
+									<ul class="filter-cg">  			
+										<li><a class="active" href="#" data-filter="*">Todos</a></li>	
+										<li><a href="#" data-filter=".cta">CTA</a></li>
+										<li><a href="#" data-filter=".websaass">WebSAASS</a></li>
+										<li><a href="#" data-filter=".cg001">CG 001/2014</a></li>
+										<li><a href="#" data-filter=".cg002">CG 002/2014</a></li>
+									</ul><!--/#portfolio-filter-CG-->
+								</div>
+						
+								<div class="portfolio-items-cg">
+								
+								<!-- CTA -->
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Parelheiros_1_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>1º Tri 2015 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Capela_1_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>1º Tri 2015 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Parelheiros_2_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>2º Tri 2015 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Capela_2_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>2º Tri 2015 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Parelheiros_3_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>3º Tri 2015 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Capela_3_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>3º Tri 2015 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_07.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Parelheiros_4_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>4º Tri 2015 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_08.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Capela_4_Trimestre_2015.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>4º Tri 2015 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_09.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Parelheiros_1_Trimestre_2016.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>1º Tri 2016 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg cta cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/cta_10.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/cta/Relatorio_CTA_Capela_1_Trimestre_2016.pdf"), :target => "_blank"  %>
+												<h5>CTA</h5>
+												<p>1º Tri 2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+								<!--/CTA-->
+
+								<!-- WebSAASS -->
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_01_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Janeiro/2016 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_02.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_01_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Janeiro/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_03.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_02_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Fevereiro/2016 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_04.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_02_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Fevereiro/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_05.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_03_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Março/2016 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_06.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_03_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Março/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_07.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_04_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Abril/2016 - STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_08.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_04_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Abril/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_09.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_05_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Maio/2016- STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_10.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_05_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Maio/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg001">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_12.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Parelheiros_06_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Junho/2016- STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-cg websaass cg002">
+										<div class="portfolio-content-cg">
+											<%= image_tag asset_path("reports/gi/websaass_11.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-cg">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/gi/websaass/Relatorio_WebSAASS_Capela_06_2016.pdf"), :target => "_blank"  %>
+												<h5>WebSAASS</h5>
+												<p>Junho/2016 - STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+								<!--/WebSAASS-->
+
+								</div>
+							</div>
+
+						</article>
+					</div>
+					<hr>
+
+				</div>
+				<div class="col-md-3">
+					<div class="sidebar-widget">
+						<h4 class="sidebar-title">Tags</h4>
+						<div class="tagcloud">
+							<%= link_to "Manual de Acompanhamento, Supervisão e Avaliação do Contrato de Gestão", "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/acesso_a_informacao/index.php?p=178347", :target => "_blank" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- /BLOG -->
