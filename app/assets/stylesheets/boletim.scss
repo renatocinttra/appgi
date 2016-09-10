@@ -1,3 +1,100 @@
-// Place all the styles related to the boletim controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 1. bi */
+
+	.isotope-item-bi {
+	    z-index: 2;
+	}
+	.isotope-hidden-bi .isotope-item-bi {
+	    z-index: 1;
+	}
+	.isotope-bi, .isotope-bi .isotope-item-bi {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-bi {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-bi .isotope-item-bi {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-bi ul.filter-bi{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-bi ul.filter-bi li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-bi ul.filter-bi li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-bi ul.filter-bi li a:hover,
+	.portfolio-wrapper-bi ul.filter-bi li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-bi .portfolio-items-bi{
+		clear: both;
+	}
+
+	.portfolio-wrapper-bi .portfolio-content-bi{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-bi .portfolio-overlay-bi{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-bi .portfolio-content-bi:hover .portfolio-overlay-bi{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-bi .portfolio-overlay-bi a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-bi .portfolio-overlay-bi a:hover{
+		color: #fff;
+	}

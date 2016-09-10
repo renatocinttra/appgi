@@ -9,7 +9,7 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-					<a class="logo" href="index.html"><%= image_tag asset_path("logo.png") %></a>
+					<a class="logo"><%= link_to (image_tag asset_path("logo.png")), "http://www.saudedafamilia.org", :target => "_blank" %></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
@@ -108,7 +108,7 @@
 					<h2><i class="fa fa-users"></i> Gerência de RH</h2>
 					<p align=justify>Elabora planos táticos e operacionais na direção dos objetivos da Instituição, coordenando o recrutamento, seleção e avaliação de pessoal. Potencializar os processos organizacionais e gerenciar pessoas, de forma a integrar a Rede.</p>
 					<br>
-					<%= link_to "Em breve",  gh_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+					<%= link_to "Acesse",  gh_index_path, class: "btn btn-readmore", :target => "_top" %>
 					<br>
 				</div>
 
@@ -152,7 +152,7 @@
 						<span class="st-border"></span>
 						<br>
 						<br>
-						<p align=justify>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae</p>
+						<p align=justify>Este Painel terá por objetivo orientar e subsidiar as equipes técnicas quanto às metas de equipe mínima, de produção e de qualidade, no âmbito do Contrato de Gestão.</p>
 						<br>
 						<%= link_to "Em breve",  gi_index_path, class: "btn btn-readmore", disabled: "disabled" %>
 						<br>
@@ -178,7 +178,7 @@
 						<div class="noticias text-center">
 							<h4>Objetivo</h4>
 							<p>Compartilhar informações e novidades que acontecem nos serviços de saúde gerenciados pela ASF na Região Sul. Este tipo de comunicação possibilita o fortalecimento da relação entre todos os colaboradores e a Instituição.</p>
-							<%= link_to "Em breve",  boletim_index_path, class: "btn btn-readmore", disabled: "disabled" %>
+							<%= link_to "Veja Mais",  boletim_index_path, class: "btn btn-readmore", :target => "_top" %>
 						</div>
 				</div>	
 				<div class="col-sm-6 our-office">

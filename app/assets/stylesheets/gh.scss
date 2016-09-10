@@ -1,3 +1,403 @@
-// Place all the styles related to the gh controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 1. TLP */
+
+	.isotope-item-tlp {
+	    z-index: 2;
+	}
+	.isotope-hidden-tlp .isotope-item-tlp {
+	    z-index: 1;
+	}
+	.isotope-tlp, .isotope-tlp .isotope-item-tlp {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-tlp {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-tlp .isotope-item-tlp {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-tlp ul.filter-tlp{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-tlp ul.filter-tlp li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-tlp ul.filter-tlp li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-tlp ul.filter-tlp li a:hover,
+	.portfolio-wrapper-tlp ul.filter-tlp li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-tlp .portfolio-items-tlp{
+		clear: both;
+	}
+
+	.portfolio-wrapper-tlp .portfolio-content-tlp{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-tlp .portfolio-overlay-tlp{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-tlp .portfolio-content-tlp:hover .portfolio-overlay-tlp{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-tlp .portfolio-overlay-tlp a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-tlp .portfolio-overlay-tlp a:hover{
+		color: #fff;
+	}
+
+/* 2. Equipe Mínima */
+
+	.isotope-item-em {
+	    z-index: 2;
+	}
+	.isotope-hidden-em .isotope-item-em {
+	    z-index: 1;
+	}
+	.isotope-em, .isotope-em .isotope-item-em {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-em {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-em .isotope-item-em {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-em ul.filter-em{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-em ul.filter-em li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-em ul.filter-em li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-em ul.filter-em li a:hover,
+	.portfolio-wrapper-em ul.filter-em li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-em .portfolio-items-em{
+		clear: both;
+	}
+
+	.portfolio-wrapper-em .portfolio-content-em{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-em .portfolio-overlay-em{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-em .portfolio-content-em:hover .portfolio-overlay-em{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-em .portfolio-overlay-em a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-em .portfolio-overlay-em a:hover{
+		color: #fff;
+	}
+
+/* 3. Movimentação */
+
+	.isotope-item-mov {
+	    z-index: 2;
+	}
+	.isotope-hidden-mov .isotope-item-mov {
+	    z-index: 1;
+	}
+	.isotope-mov, .isotope-mov .isotope-item-mov {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-mov {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-mov .isotope-item-mov {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-mov ul.filter-mov{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-mov ul.filter-mov li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-mov ul.filter-mov li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-mov ul.filter-mov li a:hover,
+	.portfolio-wrapper-mov ul.filter-mov li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-mov .portfolio-items-mov{
+		clear: both;
+	}
+
+	.portfolio-wrapper-mov .portfolio-content-mov{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-mov .portfolio-overlay-mov{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-mov .portfolio-content-mov:hover .portfolio-overlay-mov{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-mov .portfolio-overlay-mov a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-mov .portfolio-overlay-mov a:hover{
+		color: #fff;
+	}
+
+/* 4. Déficit Médico */
+
+	.isotope-item-med {
+	    z-index: 2;
+	}
+	.isotope-hidden-med .isotope-item-med {
+	    z-index: 1;
+	}
+	.isotope-med, .isotope-med .isotope-item-med {/* change duration value to whatever you like */
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	}
+	.isotope-med {
+	    -webkit-transition-property: height, width;
+	    -moz-transition-property: height, width;
+	    transition-property: height, width;
+	}
+	.isotope-med .isotope-item-med {
+	    -webkit-transition-property: -webkit-transform, opacity;
+	    -moz-transition-property:-moz-transform, opacity;
+	    transition-property:transform, opacity;
+	}
+
+	#our-works{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.portfolio-wrapper-med ul.filter-med{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 35px;
+		margin-top: 28px;
+		overflow: hidden;
+	}
+
+	.portfolio-wrapper-med ul.filter-med li{
+		float: left;
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 600;
+	}
+
+	.portfolio-wrapper-med ul.filter-med li a{
+		color: #909090;
+	}
+
+	.portfolio-wrapper-med ul.filter-med li a:hover,
+	.portfolio-wrapper-med ul.filter-med li a.active{
+		color: #000;
+	}
+
+	.portfolio-wrapper-med .portfolio-items-med{
+		clear: both;
+	}
+
+	.portfolio-wrapper-med .portfolio-content-med{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.portfolio-wrapper-med .portfolio-overlay-med{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-ms-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	.portfolio-wrapper-med .portfolio-content-med:hover .portfolio-overlay-med{
+		opacity: 1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.portfolio-wrapper-med .portfolio-overlay-med a{
+		color: #fff;
+		font-size: 35px;
+	}
+	.portfolio-wrapper-med .portfolio-overlay-med a:hover{
+		color: #fff;
+	}
