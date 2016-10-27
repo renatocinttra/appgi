@@ -722,6 +722,59 @@
 		width: 100%;
 	}
 
+/* 8. MAPA */
+	
+	#mapa{
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	.st-pricing{
+		background-color: #fff;
+		padding: 40px;
+		margin-top: 30px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.st-pricing:hover{
+		box-shadow: 0px 0px 18px #ddd;
+	}
+
+	.st-pricing h5{
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+
+	.st-pricing h3{
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+
+	.st-pricing .st-border{
+		width: 100%;
+		margin-bottom: 15px;
+		background-color: #ccc;
+	}
+
+	.st-pricing ul{
+		list-style: none;
+		padding: 0;
+	}
+
+	.st-pricing ul li{
+		padding: 12px 0;
+		font-size: 15px;
+	}
+
+	.st-pricing a.btn-send{
+		text-transform: uppercase;
+		margin-top: 20px;
+		padding: 10px 25px;
+	}
 
 /* 10. OUR TEAM */
 
