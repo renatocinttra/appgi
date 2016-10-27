@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'af/index'
+
   get 'gh/index'
 
   get 'gi/index'
