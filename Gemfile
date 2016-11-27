@@ -34,6 +34,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.0'
 # Font-Awesome SASS gem for use in Ruby projects
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.2'
+#
+gem 'rake', '~> 11.3'
 
 
 # Use ActiveModel has_secure_password

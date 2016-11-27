@@ -1,2 +1,118 @@
-<h1>Af#index</h1>
-<p>Find me in app/views/af/index.html.erb</p>
+<!-- HEADER -->
+	<header id="header">
+		<nav class="navbar st-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo"><%= link_to (image_tag asset_path("logo.png")), "http://www.saudedafamilia.org", :target => "_blank" %></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="st-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Início", root_path(:anchor => "header"), :target => "_top" %></li>
+						<li><%= link_to "Gerências", root_path(:anchor => "gerencias"), :target => "_top" %></li>
+						<li><%= link_to "Painel do CG", root_path(:anchor => "painel"), :target => "_top" %></li>
+						<li><%= link_to "Boletim Informativo", root_path(:anchor => "noticias"), :target => "_top" %></li>
+						<li><%= link_to "Mapa", root_path(:anchor => "mapa"), :target => "_top" %></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+<!-- /HEADER -->
+
+<!-- PAGE HEADER -->
+	<section id="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1>Assistência Farmacêutica</h1>
+						<span class="st-border"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- /PAGE HEADER -->
+
+<!-- BLOG -->
+	<section id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+
+					<!-- ga -->
+					<div class="single-blog">
+						<article>
+							<div class="post-thumb"><%= image_tag asset_path("ga/logo_ga_1.jpg", :class => "img-responsive", :alt => "") %></div>
+							<h4 class="post-title">Relatórios Administrativos</h4>
+							<div class="post-meta text-uppercase">
+								<span>Última atualização em 8 de agosto de 2016</span>
+							</div>
+							<div class="post-article" align=justify>
+								Os documentos aqui apresentados têm o objetivo informar, às partes interessadas, os termos em vigor nos Contratos de Gestão das Regiões de Capela do Socorro e Parelheiros, bem como apresentar o desempenho da Associação Saúde da Família (ASF) nestas regiões, em relação à utilização da verba de Repasse da Secretaria Municipal de Saúde (SMS) da Cidade de São Paulo através do Contrato de Gestão 002/2014 firmado entre a Prefeitura de São Paulo e a Organização Social Associação Saúde da Família.Além disso, também está disponível para consulta, o Manual de Utilização da Verba disponibilizada aos serviços de saúde como forma de adiantamento para compra de Material de Escritório e/ou Manutenções (Caixinha).
+
+							</div>
+						
+
+							<div class="portfolio-wrapper-ga" >
+								<div class="col-md-12">
+									<ul class="filter-ga">  			
+										<li><a class="active" href="#" data-filter="*">Todos</a></li>	
+										<li><a href="#" data-filter=".cg">Contrato de Gestão</a></li>
+										<li><a href="#" data-filter=".ta">Termo Aditivo</a></li>
+										<li><a href="#" data-filter=".prestacao">Prestação de Conta</a></li>
+										<li><a href="#" data-filter=".outros">Outros</a></li>
+									</ul><!--/#portfolio-filter-->
+								</div>
+						
+								<div class="portfolio-items-ga">
+									<!-- CG -->
+									<div class="col-md-4 col-sm-6 work-grid-ga cg">
+										<div class="portfolio-content-ga">
+											<%= image_tag asset_path("reports/ga/cg_cap_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-ga">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/ga/contrato_gestao/Contrato_Gestao_Capela.pdf"), :target => "_blank"  %>
+												<h5>Contrato de Gestão</h5>
+												<p>STS Capela do Socorro</p>
+											</div>
+										</div>	
+									</div>
+
+									<div class="col-md-4 col-sm-6 work-grid-ga cg">
+										<div class="portfolio-content-ga">
+											<%= image_tag asset_path("reports/ga/cg_par_01.jpg", :class => "img-responsive", :alt => "") %>
+											<div class="portfolio-overlay-ga">
+												<%= link_to '<i class="fa fa-file-text-o"></i>'.html_safe, asset_path("reports/ga/contrato_gestao/Contrato_Gestao_Parelheiros.pdf"), :target => "_blank"  %>
+												<h5>Contrato de Gestão</h5>
+												<p>STS Parelheiros</p>
+											</div>
+										</div>	
+									</div>
+									<!-- /#CG -->
+								</div>				
+							</div>	
+						</article>
+					</div>
+					<hr>
+					<!-- /ga -->
+
+				</div>
+				<div class="col-md-3">
+					<div class="sidebar-widget">
+						<h4 class="sidebar-title">Tags</h4>
+						<div class="tagcloud">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- /BLOG -->

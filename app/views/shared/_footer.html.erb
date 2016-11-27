@@ -6,6 +6,7 @@
 				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
 					<span>Siga-nos:</span>
 					<a><%= link_to '<i class="fa fa-facebook"></i>'.html_safe, "https://pt-br.facebook.com/asf.sul", :target => "_blank"  %></a>
+					<a><%= link_to '<i class="fa fa-sign-out"></i>'.html_safe, destroy_user_session_path, method: :delete %></a>
 				</div>
 				<!-- /SOCIAL ICONS -->
 				<div class="col-sm-6 col-sm-pull-6 copyright">
