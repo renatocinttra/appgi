@@ -38,6 +38,8 @@ gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 gem 'devise', '~> 4.2'
 #
 gem 'rake', '~> 11.3'
+#
+gem 'pg', :group => :production
 
 
 # Use ActiveModel has_secure_password
